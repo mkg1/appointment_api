@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  category: MyString
+  google_lat: MyString
+  google_long: MyString
+  start_at: 2016-05-17 10:54:49
+  end_at: 2016-05-17 10:54:49
+  all_day: false
+  complete: false
+  user_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  category: MyString
+  google_lat: MyString
+  google_long: MyString
+  start_at: 2016-05-17 10:54:49
+  end_at: 2016-05-17 10:54:49
+  all_day: false
+  complete: false
+  user_id: 1

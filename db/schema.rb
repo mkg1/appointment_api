@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160517142604) do
+ActiveRecord::Schema.define(version: 20160517145449) do
+
+  create_table "appointments", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "category"
+    t.string   "google_lat"
+    t.string   "google_long"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.boolean  "all_day"
+    t.boolean  "complete"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
