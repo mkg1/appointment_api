@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.3.0'
 
 gem 'rails', '4.2.5.1'
 
@@ -7,11 +8,22 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
-
-gem 'sqlite3'
-
 gem 'devise', '3.4.1'
 
+gem 'rails_12factor'
+
+gem 'rack-cors', require: 'rack/cors'
+
+group :production do
+  gem 'pg'
+  gem 'puma'
+end
+
+group :development, :test do
+  gem 'byebug'
+  gem 'sqlite3'
+  gem 'spring'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
